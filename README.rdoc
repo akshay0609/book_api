@@ -1,0 +1,42 @@
+**Book Api**
+----------
+Build Rails App that provides search API to Mobile client.
+Version
+ - Ruby 2.4.2
+ - Rails 4.2.10
+
+**Database initialization**
+
+    rake db:seed
+**Run application**
+
+    rails server
+    
+**Access API for availability of rooms**
+----------
+1 Create user
+ 
+    rake book_api:create_user[name]
+E.g :- rake book_api:create_user["abc"]
+
+2 Get user token 
+
+    rake book_api:get_user_token[name]
+E.g rake book_api:get_user_token["abc"]
+
+3 Access API
+
+URL :- GET http://0.0.0.0:3000/api/search
+
+HEADERS require 
+-   Authentication :- zvo-ECE73j0PFr4N88QPXQ
+
+params require
+-   title = Alva Maggio
+
+optional params require
+
+-   page = 1   
+-   per_page = 2
+
+E.g URL:- GET http://localhost:3000/api/search?title=Alva Maggio&page=1&per_page=2
