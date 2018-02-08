@@ -1,18 +1,19 @@
-**Book Api**
+*BOOK_API*
+
 ----------
 Build Rails App that provides search API to Mobile client.
 Version
  - Ruby 2.4.2
  - Rails 4.2.10
+ 
+*Database_Initialization*
 
-**Database initialization**
+    rake db:seed
+*Run_Application*
 
-    rake db:seed
-**Run application**
-
-    rails server
-    
-**Access API for availability of rooms**
+    rails server
+    
+*Access_API*
 ----------
 1 Create user
  
