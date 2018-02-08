@@ -19,12 +19,10 @@ Version
 1 Create user
  
     rake book_api:create_user[name]
-E.g :- rake book_api:create_user["abc"]
 
 2 Get user token 
 
     rake book_api:get_user_token[name]
-E.g rake book_api:get_user_token["abc"]
 
 3 Access API
 
